@@ -38,6 +38,7 @@ class kredikartiState extends State<kredikarti> {
           child: Column(
             children: <Widget>[
               CreditCardWidget(
+
                 cardNumber: cardNumber,
                 expiryDate: expiryDate,
                 cardHolderName: cardHolderName,

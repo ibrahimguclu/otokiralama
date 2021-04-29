@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oto/fiat.dart';
 import 'package:oto/honda.dart';
-import 'package:oto/honda.dart';
-import 'package:oto/main.dart';
 import 'package:oto/mercedes.dart';
 import 'package:oto/otolar.dart';
 import 'package:oto/peugeot.dart';
@@ -36,10 +34,14 @@ class _detayState extends State<detay> {
             Text("${widget.oto.oto_fiyat} \u{20BA}",style: TextStyle(fontSize: 48,color: Colors.red),),
             SizedBox(width: 200,height: 50,
 
-              child: RaisedButton(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xFF183451), // background
+                  onPrimary: Colors.white, // foreground
+                ),
                 child: Text("KİRALA"),
-                color: Colors.orange,
-                textColor: Colors.white,
+
+
 
                 onPressed: (){
 

@@ -12,9 +12,13 @@ class _fiatState extends State<fiat> {
       appBar: AppBar(
         title: Text("KİRALAMA SAYFASI"),
       ),
-       body: Center(
-          child: Text("===>>>2018 MODEL LPGLİ FIAT EGEA<<<===\n \n" "ARACIMIZ KİRALAMAYA UYGUNDUR  LÜTFEN 0536 111 11 11 NOLU TELEFONU ARAYARAK MÜŞTERİ TEMSİLCİMİZ BAYRAM BEY'LE İLETİŞİME GEÇİNİZ...", style: TextStyle(color: Colors.blue, fontSize: 40),),
-        ),
+       body: SingleChildScrollView(
+
+         child: Center(
+           
+            child: Text("===>>>2018 MODEL LPGLİ FIAT EGEA<<<===\n \n" "ARACIMIZ KİRALAMAYA UYGUNDUR  LÜTFEN 0536 111 11 11 NOLU TELEFONU ARAYARAK MÜŞTERİ TEMSİLCİMİZ BAYRAM BEY'LE İLETİŞİME GEÇİNİZ...", style: TextStyle(color: Colors.blue, fontSize: 40),),
+          ),
+       ),
     );
 
 

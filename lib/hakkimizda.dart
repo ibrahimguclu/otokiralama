@@ -31,9 +31,9 @@ class _HakkimizdaState extends State {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.0)),
                       child: Text(
-                        "Bu uygulama Dr. Öğretim Üyesi  \n \n ""Ahmet Cevahir ÇINAR tarafından yürütülen 3301456 kodlu MOBİL PROGRAMLAMA dersi kapsamında 203301109 numaralı Öğrenci İbrahim GÜÇLÜ tarafından 30 Nisan 2021 günü yapılmıştır.",
+                        "Bu uygulama Dr. Öğretim Üyesi  Ahmet Cevahir ÇINAR\n \n ""tarafından yürütülen 3301456 kodlu MOBİL PROGRAMLAMA dersi kapsamında 203301109 numaralı Öğrenci İbrahim GÜÇLÜ tarafından 30 Nisan 2021 günü yapılmıştır.",
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 22,
                           color: Color(0xff4D565B),
                         ),
                       ),

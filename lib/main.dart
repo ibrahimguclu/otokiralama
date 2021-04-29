@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oto/detay.dart';
 import 'package:oto/otolar.dart';
 import 'package:oto/drawer.dart';
-import 'package:oto/fiat.dart';
-import 'package:oto/honda.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -60,13 +59,7 @@ Future<List<otolar>> otolariGetir() async {
 
         title: Text("MARKALAR"),
         actions: <Widget>[
-          IconButton(
-            icon:  Icon(Icons.accessibility_new),
-            onPressed: (){
 
-            },
-
-          ),
         ]
       ),
       body: FutureBuilder<List<otolar>>(

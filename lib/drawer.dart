@@ -19,8 +19,8 @@ class _MyDrawerState extends State {
           children: <Widget>[
             Container(
               alignment: Alignment.centerLeft,
-              height: 90,
-              color: Colors.white,
+              height: 30,
+              color: Colors.blue,
               margin: EdgeInsets.all(0.0),
               padding: EdgeInsets.all(0.0),
               child: DrawerHeader(
@@ -29,16 +29,14 @@ class _MyDrawerState extends State {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.only(top: 10.0),
-                      child: Image(
-                        image: AssetImage("../assets/images/logo.png"),
-                      ),
+
                     ),
                   ],
                 ),
               ),
             ),
             ListTile(
-              leading: Icon(Icons.home),
+              leading: Icon(Icons.home_work),
               title: Text('Anasayfa'),
               trailing: Icon(Icons.arrow_right),
               onTap: () {
@@ -46,7 +44,7 @@ class _MyDrawerState extends State {
               },
             ),
             ListTile(
-              leading: Icon(Icons.home),
+              leading: Icon(Icons.people_alt),
               title: Text('Hakkımızda'),
               trailing: Icon(Icons.arrow_right),
               onTap: () {
@@ -54,7 +52,7 @@ class _MyDrawerState extends State {
               },
             ),
             ListTile(
-              leading: Icon(Icons.home),
+              leading: Icon(Icons.payment),
               title: Text('Ödeme'),
               trailing: Icon(Icons.arrow_right),
               onTap: () {
