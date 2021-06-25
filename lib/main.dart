@@ -23,11 +23,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-
-
   final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -49,7 +45,6 @@ Future<List<otolar>> otolariGetir() async {
   otoListesi.add(y5);
   otoListesi.add(y6);
   return otoListesi;
-
 }
   @override
   Widget build(BuildContext context) {
@@ -59,7 +54,6 @@ Future<List<otolar>> otolariGetir() async {
 
         title: Text("MARKALAR"),
         actions: <Widget>[
-
         ]
       ),
       body: FutureBuilder<List<otolar>>(

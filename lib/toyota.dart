@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:oto/toyotaoz.dart';
 class toyota extends StatefulWidget {
   @override
   _toyotaState createState() => _toyotaState();
@@ -13,9 +14,34 @@ class _toyotaState extends State<toyota> {
         title: Text("KİRALAMA SAYFASI"),
       ),
       body: SingleChildScrollView(
-        child: Text(
-          "===>>>2020 MODEL BENZİNLİ TOYOTA COROLLA <<<=== \n \n" "ARACIMIZ KİRALAMAYA UYGUNDUR\n \n" " LÜTFEN 0533 333 33 33 NOLU TELEFONU ARAYARAK MÜŞTERİ TEMSİLCİMİZ ARZU HANIM'LA İLETİŞİME GEÇİNİZ...",
-          style: TextStyle(color: Colors.blue, fontSize: 40),),
+
+        child: (Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "TOYOTA", style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.normal),
+            ),
+            SizedBox(height: 10.0,),
+            FadeAnimatedTextKit(
+              onTap: ()
+              {
+                print("TOYOTA");
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => toyotaoz(),
+                    ));
+              }
+              ,
+              text: ["CAZİP FİYATLAR ","İÇİN TIKLAYIN","CAZİP FİYATLARLA KİRALAYABİLİRSİNİZ"],
+              textStyle: TextStyle(fontSize: 42.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+              alignment: AlignmentDirectional.center,
+            )
+          ],
+        )
+        ),
       ),
     );
   }

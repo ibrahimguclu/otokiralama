@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:oto/anket.dart';
+import 'package:oto/dosyaal.dart';
 import 'package:oto/hakkimizda.dart';
+import 'package:oto/istatistik.dart';
 import 'package:oto/kredikarti.dart';
 import 'package:oto/main.dart';
 import 'package:oto/fiat.dart';
@@ -57,6 +60,30 @@ class _MyDrawerState extends State {
               trailing: Icon(Icons.arrow_right),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => kredikarti()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.addchart_sharp),
+              title: Text('İstatistik'),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => istatistik()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.wifi_protected_setup),
+              title: Text('Dosya Gönder/Al'),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => dosyaislemi()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.addchart_sharp),
+              title: Text('Anket'),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => anket()));
               },
             ),
           ],

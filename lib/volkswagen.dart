@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:oto/volkswagenoz.dart';
 class volkswagen extends StatefulWidget {
   @override
   _volkswagenState createState() => _volkswagenState();
@@ -13,9 +14,34 @@ class _volkswagenState extends State<volkswagen> {
         title: Text("KİRALAMA SAYFASI"),
       ),
       body: SingleChildScrollView(
-        child: Text(
-          "===>>>2020 MODEL DİZEL VOLKSWAGEN TRANSPORTER <<<=== \n \n" "ARACIMIZ KİRALAMAYA UYGUNDUR\n \n" " LÜTFEN 0532 222 22 22 NOLU TELEFONU ARAYARAK MÜŞTERİ TEMSİLCİMİZ MERT BEY'LE İLETİŞİME GEÇİNİZ...",
-          style: TextStyle(color: Colors.blue, fontSize: 40),),
+
+        child: (Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "TRANSPORTER", style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.normal),
+            ),
+            SizedBox(height: 10.0,),
+            FadeAnimatedTextKit(
+              onTap: ()
+              {
+                print("VW");
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => volkswagenoz(),
+                    ));
+              }
+              ,
+              text: ["CAZİP FİYATLAR ","İÇİN TIKLAYIN","CAZİP FİYATLARLA KİRALAYABİLİRSİNİZ"],
+              textStyle: TextStyle(fontSize: 42.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+              alignment: AlignmentDirectional.center,
+            )
+          ],
+        )
+        ),
       ),
     );
   }

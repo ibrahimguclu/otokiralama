@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:oto/mercedesoz.dart';
 class mercedes extends StatefulWidget {
   @override
   _mercedesState createState() => _mercedesState();
@@ -13,10 +14,38 @@ class _mercedesState extends State<mercedes> {
         title: Text("KİRALAMA SAYFASI"),
       ),
       body: SingleChildScrollView(
-        child: Text(
-          "===>>>2021 MODEL DİZEL MERCEDES C200 AMG<<<=== \n \n" "ARACIMIZ KİRALAMAYA UYGUNDUR\n \n" " LÜTFEN 0533 333 33 33 NOLU TELEFONU ARAYARAK MÜŞTERİ TEMSİLCİMİZ ARZU HANIM'LA İLETİŞİME GEÇİNİZ...",
-          style: TextStyle(color: Colors.blue, fontSize: 40),),
+
+        child: (Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "MERCEDES", style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.normal),
+            ),
+            SizedBox(height: 10.0,),
+            FadeAnimatedTextKit(
+              onTap: ()
+              {
+                print("MERCEDES");
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => mercedesoz(),
+                    ));
+              }
+              ,
+              text: ["CAZİP FİYATLAR ","İÇİN TIKLAYIN","CAZİP FİYATLARLA KİRALAYABİLİRSİNİZ"],
+              textStyle: TextStyle(fontSize: 42.0, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+              alignment: AlignmentDirectional.center,
+            )
+          ],
+        )
+        ),
       ),
     );
   }
 }
+
+
+

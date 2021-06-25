@@ -39,6 +39,7 @@ class _detayState extends State<detay> {
                   primary: Color(0xFF183451), // background
                   onPrimary: Colors.white, // foreground
                 ),
+
                 child: Text("KİRALA"),
 
 
@@ -68,7 +69,8 @@ class _detayState extends State<detay> {
 
                 },
               ),
-            )
+            ),
+
           ],
         ),
 

@@ -21,6 +21,7 @@ class kredikartiState extends State<kredikarti> {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       title: 'Flutter Credit Card View Demo',
       debugShowCheckedModeBanner: false,
